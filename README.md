@@ -1,22 +1,68 @@
-# Training the Image Classifier & Creating a Web App
-## Our example:  FoodGan.ai
+# FoodGan.ai
 
+App to classify the Food, identifies ingredients, calories and recommend similar type food based on health conditions.
 
-The following were used for model **training** (see [requirements.txt](requirements.txt)):    
-- fastai:  version 1.0.42
-- PyTorch:  version  1.0.0
-- Python:  version 3.6
+# Introduction
 
-The following were used for model **deployment**:    
-- Heroku
-- Flask:  version 1.0
- 
+This project was completed by Kausik Chattapadhyay. This article details how to create a web and mobile app image classifier and is deep-learning-language agnostic.
 
-## Table of Contents
-1.  [Training the Model](docs/1_training.md) using fastai:  [
-2.  [Deploying the App on Heroku](docs/2_heroku_app.md):  our web app is [**food-img-classifier.herokuapp.com**](https://food-img-classifier.herokuapp.com)
-3.  Deploying a Mobile App, see this repo:  [npatta01/mobile-deep-learning-classifier](https://github.com/npatta01/mobile-deep-learning-classifier)
+# FoodGan.ai app will capture food images and perform the following tasks :
 
+1. Identify the Food.
+2. Identify Ingredients and total calories.
+3. Recommend similar food based on user health conditions.
+
+Our example uses the fastai library, but a model weights file from any deep learning library can be used to create a web and mobile app using our methods.
+
+# Summary
+
+The project covers:
+
+1. training a deep learning model for food images using fastai
+2. deploying a web app using Heroku and Flask
+3. deploying a mobile app
+
+# Heroku Web App Deployment
+
+Heroku was utilized to deploy the web app.
+
+# Input to Heroku App
+
+This output file, model.pth is the input to the Heroku app.
+
+# Test running the web app
+
+This contains Python 3, Flask and fastai.
+
+docker build -t app .
+docker run -p 5000:5000 -it app 
+Heroku Setup
+
+If you don't have a Heroku account, create one here: www.heroku.com. Each line can be copied and submitted.
+
+wget -qO- https://cli-assets.heroku.com/install-ubuntu.sh | sh
+heroku login
+heroku container:login
+
+APP_NAME="food-img-classifier"
+heroku create $APP_NAME
+
+heroku container:push web --app ${APP_NAME}
+
+heroku container:release web --app ${APP_NAME}
+heroku open --app $APP_NAME
+heroku logs --tail --app ${APP_NAME}
+Note: After 15 minutes of inactivity, Heroku will suspend the app. The next time the web app is called, Heroku will restart the app. There could be a slight delay in starting the app.
+
+Our Flask Web Application
+
+Our Flask web app is available here: foodgan-ai.herokuapp.com
+Give it a try! Upload an image or add a URL.
+Our mobile apps are available:
+
+iOS Apple store: Android Google Play:
+
+Our GitHub repositories:
 
 ## Demo
 
