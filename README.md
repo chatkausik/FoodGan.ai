@@ -2,6 +2,8 @@
 
 App to classify the Food, identifies ingredients, calories and recommend similar type food based on health conditions.
 
+https://foodgan-ai.herokuapp.com
+
 # Introduction
 
 This project was completed by Kausik Chattapadhyay. This article details how to create a web and mobile app image classifier and is deep-learning-language agnostic.
