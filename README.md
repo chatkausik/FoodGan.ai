@@ -65,7 +65,7 @@ Note:  After 15 minutes of inactivity, Heroku will suspend the app.  The next ti
 
 ## Demo
 
-![Demo](https://media.giphy.com/media/ZcQwc284t3QV6cMqVj/source.mov)
+![](https://media.giphy.com/media/ZcQwc284t3QV6cMqVj/source.mov)
 
 
  
