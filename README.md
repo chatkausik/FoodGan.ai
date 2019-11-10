@@ -67,6 +67,8 @@ Note:  After 15 minutes of inactivity, Heroku will suspend the app.  The next ti
 
 ![](https://github.com/chatkausik/FoodGan.ai/blob/master/assets/demo.gif)
 
+![](https://github.com/chatkausik/FoodGan.ai/blob/master/assets/demo2.gif)
+
 
  
 
